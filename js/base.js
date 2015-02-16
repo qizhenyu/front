@@ -12,7 +12,7 @@ var next = new Vue({
 })
 
 //Hacker News
-qwest.get('http://feeds.feedburner.com/iqiwenlu').then(function(res){
+qwest.get('http://node-read.avosapps.com/rss2json?feed=http://feeds.feedburner.com/iqiwenlu').then(function(res){
   hackernews.lists = JSON.parse(res);
 })
 var hackernews = new Vue({
