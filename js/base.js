@@ -12,7 +12,7 @@ var next = new Vue({
 })
 
 //Hacker News
-qwest.get('http://ajax.googleapis.com/ajax/services/feed/load?v=2.0&q=http://qiwen.lu/feed&num=20').then(function(res){
+qwest.get('http://pipes.yahoo.com/pipes/pipe.run?_id=2FV68p9G3BGVbc7IdLq02Q&_render=json&feedcount=10&feedurl=http%3A%2F%2Fqiwen.lu%2Ffeed').then(function(res){
   hackernews.lists = JSON.parse(res);
 })
 var hackernews = new Vue({
